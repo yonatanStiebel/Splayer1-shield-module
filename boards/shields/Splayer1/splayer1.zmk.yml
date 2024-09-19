@@ -1,0 +1,11 @@
+file_format: "1"
+id: splayer1
+name: Splayer1
+type: shield
+url: https://github.com/yonatanStiebel/Splayer1.git
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - splayer1_left
+  - splayer1_right
