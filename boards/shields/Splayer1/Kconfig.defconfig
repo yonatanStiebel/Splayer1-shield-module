@@ -1,0 +1,16 @@
+if SHIELD_SPLAYER1_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Splayer1"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SPLAYER1_LEFT || SHIELD_SPLAYER1_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

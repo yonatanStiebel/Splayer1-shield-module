@@ -1,0 +1,5 @@
+config SHIELD_SPLAYER1_LEFT
+    def_bool $(shields_list_contains,Spalyer1_left)
+
+config SHIELD_SPLAYER1_RIGHT
+    def_bool $(shields_list_contains,Spalyer1_right)
