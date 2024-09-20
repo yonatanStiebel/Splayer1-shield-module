@@ -22,13 +22,15 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+//TODO: UNDERSTAND MEANING:
+
+//    conditional_layers {
+//        compatible = "zmk,conditional-layers";
+//        tri_layer {
+//            if-layers = <1 2>;
+//            then-layer = <3>;
+//        };
+//    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -45,7 +47,9 @@
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  ESC     │  SPC     │  TAB     │   │ ENTER    │ BSPC     │ DEL      │
-                                 &kp 6 ESC  &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
+        // TEST MAPPING:
+                                 &kp ESC    &kp SPACE   &kp TAB       &kp ENTER   &kp BSPC   &kp DEL
+        // TRUE MAPPING:         &lt 6 ESC  &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
