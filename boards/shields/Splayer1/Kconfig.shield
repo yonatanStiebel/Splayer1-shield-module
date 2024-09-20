@@ -1,5 +1,5 @@
 config SHIELD_SPLAYER1_LEFT
-    def_bool $(shields_list_contains,spalyer1_left)
+    def_bool $(shields_list_contains,splayer1_left)
 
 config SHIELD_SPLAYER1_RIGHT
-    def_bool $(shields_list_contains,spalyer1_right)
+    def_bool $(shields_list_contains,splalyer1_right)
