@@ -48,7 +48,7 @@
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  ESC     │  SPC     │  TAB     │   │ ENTER    │ BSPC     │ DEL      │
         // TEST MAPPING:
-                                 &kp ESC    &kp SPACE   &kp TAB       &sys_reset   &bootloader   &reset
+                                 &kp ESC    &kp SPACE   &kp TAB       &sys_reset   &bootloader   &kp DEL
         // TRUE MAPPING:         &lt 6 ESC  &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
