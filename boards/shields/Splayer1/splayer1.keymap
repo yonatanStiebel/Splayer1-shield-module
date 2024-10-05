@@ -162,6 +162,26 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                      │          │          │          │   │  STOP    │PLAY/PAUSE│  DEL     │
                                   &trans     &trans     &trans         &kp C_STOP &kp C_PP   &kp C_MUTE //TODO: C_STOP MIGHT FAIL!
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯ //TODO: REWIND MIGHT BE A GOOD ADDITION!
+            >;
+        };
+
+        //TODO: CREATE LAYER 7 (or make the gaming layer the seventh layer or something like that
+
+        gaming_layer { // layer 8
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  ESC     │  Q       │  W       │  E       │  R       │   │          │          │          │          │          │
+            &kp ESC    &kp Q      &kp W      &kp E      &kp R          &trans     &trans     &trans     &trans     &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  LSHFT   │  A       │  S       │  D       │  F       │   │          │          │          │          │          │
+            &kp LSHFT  &kp A      &kp S      &kp D      &kpF           &trans     &trans     &trans     &trans     &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  LCTRL   │  Z       │  X       │  C       │  V       │   │          │          │          │          │          │
+            &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &trans     &trans     &trans     &trans     &trans
+        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
+        //                      │  SPC     │  SPC     │  SPC     │   │          │          │          │
+                                  &kp SPACE  &kp SPACE  &kp SPACE      &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
