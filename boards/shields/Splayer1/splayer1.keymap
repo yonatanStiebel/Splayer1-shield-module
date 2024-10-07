@@ -39,7 +39,7 @@
             bindings = <&change_language>;
         };
 
-        combo_change_language {
+        combo_toggle_gaming_layer {
             compatible = "zmk,combos";
             timeout-ms = <50>;
             key-positions = <17 33>;
