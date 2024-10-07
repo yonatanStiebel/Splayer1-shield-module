@@ -27,10 +27,12 @@
             wait-ms = <30>;
             tap-ms = <40>;
             bindings = <&tog 1>,
-                       <&kp LS(LALT)>;
+                       <&kp LS(LALT)>; //TODO: could this be a problem?
         )
     };
 
+
+    //TODO: MAYBE A DIFFERENT METHOD SHOULD BE USED, CHECK HOW IT WORKS - PERHAPS ASK FOR OTHERS' IMPLEMENTATIONS
     combos {
         combo_change_language {
             compatible = "zmk,combos";
