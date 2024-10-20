@@ -21,15 +21,15 @@
             bindings = <&kp>, <&kp>;
         };
     };
-
-    macros {
-        ZMK_MACRO(change_language,
-            wait-ms = <30>;
-            tap-ms = <40>;
-            bindings = <&tog 1>,
-                       <&kp LS(LALT)>; //TODO: could this be a problem?
-        )
-    };
+//
+//    macros {
+//        ZMK_MACRO(change_language,
+//            wait-ms = <30>;
+//            tap-ms = <40>;
+//            bindings = <&tog 1>,
+//                       <&kp LS(LALT)>; //TODO: could this be a problem?
+//        )
+//    };
 
 
 //    //TODO: MAYBE A DIFFERENT METHOD SHOULD BE USED, CHECK HOW IT WORKS - PERHAPS ASK FOR OTHERS' IMPLEMENTATIONS
@@ -71,7 +71,7 @@
             HRML(A,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
+            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &tog 1
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
                                  &lt 6 ESC  &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
@@ -91,7 +91,7 @@
              HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &tog 1
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
                                  &kp 6 ESC  &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
@@ -108,7 +108,7 @@
             &kp LBKT   &kp N7     &kp N8     &kp N9     &kp RBKT        &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ;       │  4       │  5       │  6       │  =       │   │          │          │          │          │          │
-            &kp SEMI   &kp N4     &kp N5     &kp N6     &kp EQUAL       &trans     &trans  &change_language &trans  &trans
+            &kp SEMI   &kp N4     &kp N5     &kp N6     &kp EQUAL       &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  `       │  1       │  2       │  3       │  \       │   │          │          │          │          │          │
            &kp GRAVE   &kp N1     &kp N2     &kp N3     &kp BSLH        &trans     &trans     &trans     &trans     &trans
@@ -146,7 +146,7 @@
             &trans     &trans     &trans     &trans     &trans         &kp LC(Y)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ Caps Lock│  ⬅      │   ⬇       │  ⬆       │ ➡       │
-            &trans     &trans     &tog 8     &trans     &trans         &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+            &trans     &trans     &trans     &trans     &trans         &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  Insert  │  Home    │ Page Down│  Page Up │  End     │
             &trans     &trans     &trans     &trans     &trans         &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
@@ -210,24 +210,24 @@
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
-
-        gaming_layer { // layer 8
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ESC     │  Q       │  W       │  E       │  R       │   │          │          │          │          │          │
-            &kp ESC    &kp Q      &kp W      &kp E      &kp R          &trans     &trans     &trans     &trans     &trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  LSHFT   │  A       │  S       │  D       │  F       │   │          │          │          │          │          │
-            &kp LSHFT  &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &trans     &trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  LCTRL   │  Z       │  X       │  C       │  V       │   │          │          │          │          │          │
-            &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &trans     &trans     &trans     &trans     &trans
-        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-        //                      │  SPC     │  SPC     │  SPC     │   │          │          │          │
-                                  &kp SPACE  &kp SPACE  &kp SPACE      &trans     &trans     &trans
-        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
-            >;
-        };
+//
+//        gaming_layer { // layer 8
+//            bindings = <
+//        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+//        //│  ESC     │  Q       │  W       │  E       │  R       │   │          │          │          │          │          │
+//            &kp ESC    &kp Q      &kp W      &kp E      &kp R          &trans     &trans     &trans     &trans     &trans
+//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//        //│  LSHFT   │  A       │  S       │  D       │  F       │   │          │          │          │          │          │
+//            &kp LSHFT  &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &trans     &trans
+//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//        //│  LCTRL   │  Z       │  X       │  C       │  V       │   │          │          │          │          │          │
+//            &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &trans     &trans     &trans     &trans     &trans
+//        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
+//        //                      │  SPC     │  SPC     │  SPC     │   │          │          │          │
+//                                  &kp SPACE  &kp SPACE  &kp SPACE      &trans     &trans     &trans
+//        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+//            >;
+//        };
 
 //        left_layer {
 //            bindings = <
