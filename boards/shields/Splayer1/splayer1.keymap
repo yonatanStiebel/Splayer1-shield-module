@@ -32,22 +32,22 @@
     };
 
 
-    //TODO: MAYBE A DIFFERENT METHOD SHOULD BE USED, CHECK HOW IT WORKS - PERHAPS ASK FOR OTHERS' IMPLEMENTATIONS
-    combos {
-        combo_change_language {
-            compatible = "zmk,combos";
-            timeout-ms = <50>;
-            key-positions = <16 28>;
-            bindings = <&change_language>;
-        };
-
-        combo_toggle_gaming_layer {
-            compatible = "zmk,combos";
-            timeout-ms = <50>;
-            key-positions = <17 33>;
-            bindings = <&tog 8>;
-        };
-    };
+//    //TODO: MAYBE A DIFFERENT METHOD SHOULD BE USED, CHECK HOW IT WORKS - PERHAPS ASK FOR OTHERS' IMPLEMENTATIONS
+//    combos {
+//        combo_change_language {
+//            compatible = "zmk,combos";
+//            timeout-ms = <50>;
+//            key-positions = <16 28>;
+//            bindings = <&change_language>;
+//        };
+//
+//        combo_toggle_gaming_layer {
+//            compatible = "zmk,combos";
+//            timeout-ms = <50>;
+//            key-positions = <17 33>;
+//            bindings = <&tog 8>;
+//        };
+//    };
 
 //TODO: UNDERSTAND MEANING:
 
@@ -108,7 +108,7 @@
             &kp LBKT   &kp N7     &kp N8     &kp N9     &kp RBKT        &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ;       │  4       │  5       │  6       │  =       │   │          │          │          │          │          │
-            &kp SEMI   &kp N4     &kp N5     &kp N6     &kp EQUAL       &trans     &trans     &trans     &trans     &trans
+            &kp SEMI   &kp N4     &kp N5     &kp N6     &kp EQUAL       &trans     &trans  &change_language &trans  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  `       │  1       │  2       │  3       │  \       │   │          │          │          │          │          │
            &kp GRAVE   &kp N1     &kp N2     &kp N3     &kp BSLH        &trans     &trans     &trans     &trans     &trans
@@ -146,7 +146,7 @@
             &trans     &trans     &trans     &trans     &trans         &kp LC(Y)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ Caps Lock│  ⬅      │   ⬇       │  ⬆       │ ➡       │
-            &trans     &trans     &trans     &trans     &trans         &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+            &trans     &trans     &tog 8     &trans     &trans         &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  Insert  │  Home    │ Page Down│  Page Up │  End     │
             &trans     &trans     &trans     &trans     &trans         &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
