@@ -75,7 +75,7 @@
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
 //                                 &lt 6 ESC  &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
-                                  &lt 6 ESC    &lt 4 SPACE  &kp TAB        &lt 3 ENTER  &lt 2 BSPC &lt 5 DEL
+                                  &lt 6 ESC    &lt 4 SPACE  &lt 7 TAB        &lt 3 ENTER  &lt 2 BSPC &lt 5 DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -96,7 +96,7 @@
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
 //                                 &kp 6 ESC  &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
-                                  &lt 6 ESC    &lt 4 SPACE  &kp TAB        &lt 3 ENTER  &lt 2 BSPC &lt 5 DEL
+                                  &lt 6 ESC    &lt 4 SPACE  &lt 7 TAB        &lt 3 ENTER  &lt 2 BSPC &lt 5 DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -194,24 +194,24 @@
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯ //TODO: REWIND MIGHT BE A GOOD ADDITION!
             >;
         };
-//
-//        bluetooth_layer { //layer 7
-//            bindings = <
-//        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-//           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
-//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-//          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
-//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-//            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
-//        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-//        //                      │          │          │          │   │          │          │          │
-//                                  &trans     &trans     &trans         &trans     &trans     &trans
-//        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
-//            >;
-//        };
+
+        bluetooth_layer { //layer 7
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
+          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
+            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
+        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
+        //                      │          │          │          │   │          │          │          │
+                                  &trans     &trans     &trans         &trans     &trans     &trans
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+            >;
+        };
 //
 //        gaming_layer { // layer 8
 //            bindings = <
