@@ -21,25 +21,23 @@
             bindings = <&kp>, <&kp>;
         };
     };
-//    macros {
-//        zed_em_kay: zed_em_kay {
-//            compatible = "zmk,behavior-macro";
-//            #binding-cells = <0>;
-//            bindings
-//            = <&macro_press &kp LSHFT>
-//            , <&macro_tap &kp Z &kp M &kp K>
-//            , <&macro_release &kp LSHFT>
-//            ;
-//        };
-//    };
     macros {
-        ZMK_MACRO(change_language,
-            wait-ms = <30>;
-            tap-ms = <40>;
+            change_language: change_language {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings = <&tog 1>,
-                       <&macro_tap LS(LALT)>; //TODO: could this be a problem?
-        )
+            <&macro_tap LS(LALT)>; //TODO: could this be a problem?
+            ;
+        };
     };
+//    macros {
+//        ZMK_MACRO(change_language,
+//            wait-ms = <30>;
+//            tap-ms = <40>;
+//            bindings = <&tog 1>,
+//                       <&macro_tap LS(LALT)>; //TODO: could this be a problem?
+//        )
+//    };
 
 
 //    //TODO: MAYBE A DIFFERENT METHOD SHOULD BE USED, CHECK HOW IT WORKS - PERHAPS ASK FOR OTHERS' IMPLEMENTATIONS
