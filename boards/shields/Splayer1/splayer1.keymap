@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog 1>,
-            <&macro_tap LS(LALT)>; //TODO: could this be a problem?
+            <&kp LS(C)>; //TODO: could this be a problem?
             ;
         };
     };
