@@ -21,22 +21,22 @@
             bindings = <&kp>, <&kp>;
         };
     };
-    macros {
-            change_language: change_language {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&tog 1>,
-                       <&kp LS(LALT)>; //TODO: could this be a problem?
-        };
-    };
 //    macros {
-//        ZMK_MACRO(change_language,
-//            wait-ms = <30>;
-//            tap-ms = <40>;
+//            change_language: change_language {
+//            compatible = "zmk,behavior-macro";
+//            #binding-cells = <0>;
 //            bindings = <&tog 1>,
-//                       <&macro_tap LS(LALT)>; //TODO: could this be a problem?
-//        )
+//                       <&kp LS(LALT)>; //TODO: could this be a problem?
+//        };
 //    };
+    macros {
+        ZMK_MACRO(change_language,
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&tog 1>,
+                       <&macro_tap LS(LALT)>; //TODO: could this be a problem?
+        )
+    };
 
 
 //    //TODO: MAYBE A DIFFERENT METHOD SHOULD BE USED, CHECK HOW IT WORKS - PERHAPS ASK FOR OTHERS' IMPLEMENTATIONS
