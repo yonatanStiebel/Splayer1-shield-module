@@ -58,7 +58,7 @@
                                  &lt 6 D    &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
-        };
+    };
 
         qwerty_layer { // layer 1, used for other languages
             bindings = <
@@ -106,7 +106,7 @@
             &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS        &trans     &trans     &tog 8     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │  !       │  @       │  #       │  |       │   │          │          │          │          │          │
-            &kp TILDE  &kp EXCL   &kp N2     &kp N3     &kp PIPE        &trans     &trans     &trans     &trans     &trans
+            &kp TILDE  &kp EXCL   &kp AT     &kp HASH   &kp PIPE        &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  (       │  )       │  _       │   │          │          │          │
                                   &kp LPAR   &kp RPAR   &kp UNDER       &trans     &trans     &trans
@@ -136,10 +136,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  F12     │  F7      │  F8      │  F9      │  PSCRN   │   │          │          │          │          │          │
-            &kp F12    &kp N7     &kp N8     &kp N9     &kp PSCRN       &trans     &trans     &trans     &trans     &trans
+            &kp F12    &kp F7     &kp F8     &kp F9     &kp PSCRN       &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F11     │  F4      │  F5      │  F6      │SCROLLLOCK│   │          │          │          │          │          │
-            &kp F11    &kp N4     &kp N5     &kp N6     &kp SLCK        &trans     &trans     &trans     &trans     &trans
+            &kp F11    &kp F4     &kp F5     &kp F6     &kp SLCK        &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F10     │  F1      │  F2      │  F3      PAUSE_BREAK│   │          │          │          │          │          │
             &kp F10    &kp F1     &kp F2     &kp F3   &kp PAUSE_BREAK   &trans     &trans     &trans     &trans     &trans
