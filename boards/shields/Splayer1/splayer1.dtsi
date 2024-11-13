@@ -1,6 +1,12 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "splayer1-layouts.dtsi"
 
+&physical_layout0 {
+	kscan = <&kscan0>;
+	transform = <&matrix_transform0>;
+};
+
+
 / {
 	chosen {
 		zmk,physical-layout = &physical_layout0;
