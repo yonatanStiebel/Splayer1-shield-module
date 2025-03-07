@@ -51,11 +51,11 @@
         //│  A(LSHFT)│  R(LALT) │  S(LCTRL)│  T(WIN)  │  G       │   │  M       │  N(WIN)  │  E(RCTRL)│  I(RALT) │  O(RSHFT)│
             HRML(A,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │D(malfunc)│  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
+        //│  Z       │  X       │  C       │ D        │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-        //                      │  ESC (!) │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
-                                 &lt 6 D    &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
+        //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
+                                 &lt 6 ESC    &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
     };
@@ -69,11 +69,11 @@
         //│  A(LSHFT)│  S(LALT) │  D(LCTRL)│  F(WIN)  │  G       │   │  H       │  J(WIN)  │  K(RCTRL)│  L(RALT) │' "(RSHFT)│
              HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │V(malfunc)│  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
+        //│  Z       │  X       │  C       │ V        │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-        //                      │  ESC (!) │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
-                                 &lt 6 V    &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
+        //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
+                                 &lt 6 ESC    &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -87,7 +87,7 @@
         //│  ;       │  4       │  5       │  6       │  =       │   │          │          │          │          │          │
             &kp SEMI   &kp N4     &kp N5     &kp N6     &kp EQUAL       &trans     &trans     &change_language    &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  `       │  1       │  2       │3(malfunc)│  \       │   │          │          │          │          │          │
+        //│  `       │  1       │  2       │ 3        │  \       │   │          │          │          │          │          │
            &kp GRAVE   &kp N1     &kp N2     &kp N3     &kp BSLH        &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │ . > DOT! │  0       │  -       │   │          │ACTIVATOR │          │
