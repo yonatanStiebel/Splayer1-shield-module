@@ -44,19 +44,32 @@
         compatible = "zmk,keymap";
         default_layer { // layer 0
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ' "     │
-            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SQT
+Colemak DH//╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+//        //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ' "     │
+//            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SQT
+//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//        //│  A(LSHFT)│  R(LALT) │  S(LCTRL)│  T(WIN)  │  G       │   │  M       │  N(WIN)  │  E(RCTRL)│  I(RALT) │  O(RSHFT)│
+//            HRML(A,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        O)
+//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//        //│  Z       │  X       │  C       │ D        │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
+//            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
+//        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
+//        //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
+//                                 &lt 6 ESC    &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
+//        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+Night   //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  B       │  F       │  L       │  K       │  Q       │   │  P       │  G       │  O       │  U       │  . >     │
+            &kp B      &kp F      &kp L      &kp K      &kp Q          &kp P      &kp G      &kp O      &kp U      &kp DOT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A(LSHFT)│  R(LALT) │  S(LCTRL)│  T(WIN)  │  G       │   │  M       │  N(WIN)  │  E(RCTRL)│  I(RALT) │  O(RSHFT)│
-            HRML(A,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        O)
+        //│  N(LSHFT)│  S(LALT) │  H(LCTRL)│  T(WIN)  │  M       │   │  Y       │  C(WIN)  │  A(RCTRL)│  E(RALT) │  I(RSHFT)│
+            HRML(N,        S,         H,         T)     &kp M          &kp Y      HRMR(C,        A,         E,        I)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │ D        │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
+        //│  X       │  V       │  J       │  D       │  Z       │   │  ' "     │  W       │  _       │ / ?      │ , <      │
+            &kp X      &kp V      &kp J      &kp D      &kp Z          &kp SQT    &kp W      &kp UNDER  &kp FSLH   &kp COMMA
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-        //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
-                                 &lt 6 ESC    &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
-        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+        //                      │  ENTER   │  R       │  TAB     │   │  BSPC    │  SPC     │  DEL     │
+                                 &lt 6 ENTER &lt 4 R    &lt 7 TAB     &lt 3 BSPC &lt 2 SPACE &lt 5 DEL
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯//TODO: find a fitting place for esc
             >;
     };
 
@@ -186,7 +199,7 @@
             >;
         };
 
-        gaming_layer { // layer 8
+        gaming_layer { // layer 8, activated from layer 3
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  ESC     │  Q       │  W       │  E       │  R       │   │          │          │          │          │          │
@@ -198,8 +211,8 @@
         //│  LCTRL   │  Z       │  X       │  C       │  V       │   │          │          │          │          │          │
             &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-        //                      │  SPC     │  SPC     │  SPC     │   │          │          │          │
-                                  &kp SPACE  &kp SPACE  &kp SPACE      &trans     &trans     &trans
+        //                      │  TAB     │  SPC     │  SPC     │   │          │          │          │
+                                  &kp TAB  &kp SPACE  &kp SPACE      &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
