@@ -55,7 +55,7 @@
 //            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
 //        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
 //        //                      │  ESC     │  SPC     │  TAB     │   │  ENTER   │  BSPC    │  DEL     │
-//                                 &lt 6 ESC    &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
+//                                 &lt 6 ESC  &lt 4 SPACE &lt 7 TAB     &lt 3 ENTER &lt 2 BSPC &lt 5 DEL
 //        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
 //Night   ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  B       │  F       │  L       │  K       │  Q       │   │  P       │  G       │  O       │  U       │  . >     │
@@ -64,8 +64,8 @@
         //│  N(LSHFT)│  S(LALT) │  H(LCTRL)│  T(WIN)  │  M       │   │  Y       │  C(WIN)  │  A(RCTRL)│  E(RALT) │  I(RSHFT)│
             HRML(N,        S,         H,         T)     &kp M          &kp Y      HRMR(C,        A,         E,        I)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  X       │  V       │  J       │  D       │  Z       │   │  ' "     │  W       │  _       │ / ?      │ , <      │
-            &kp X      &kp V      &kp J      &kp D      &kp Z          &kp SQT    &kp W      &kp UNDER  &kp FSLH   &kp COMMA
+        //│  X       │  V       │  J       │  D       │  Z       │   │  ' "     │  W       │  \       │ / ?      │ , <      │
+            &kp X      &kp V      &kp J      &kp D      &kp Z          &kp SQT    &kp W      &kp BSLH   &kp FSLH   &kp COMMA
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  ENTER   │  R       │  TAB     │   │  BSPC    │  SPC     │  DEL     │
                                  &lt 6 ENTER &lt 4 R    &lt 7 TAB     &lt 3 BSPC &lt 2 SPACE &lt 5 DEL
@@ -85,8 +85,8 @@
         //│  Z       │  X       │  C       │ V        │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-        //                      │  ENTER   │  :       │  TAB     │   │  BSPC    │  SPC     │  DEL     │
-                                &lt 6 ENTER &lt 4 COLON &lt 7 TAB     &lt 3 BSPC &lt 2 SPACE &lt 5 DEL
+        //                      │  ENTER   │  ;       │  TAB     │   │  BSPC    │  SPC     │  DEL     │
+                                &lt 6 ENTER &lt 4 SEMI &lt 7 TAB     &lt 3 BSPC &lt 2 SPACE &lt 5 DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -104,7 +104,7 @@
            &kp GRAVE   &kp N1     &kp N2     &kp N3     &kp BSLH        &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │ . > DOT! │  0       │  -       │   │          │ACTIVATOR │          │
-                                  &kp N3    &kp N0     &kp MINUS       &trans     &trans     &trans
+                                  &kp DOT    &kp N0     &kp MINUS       &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -211,8 +211,8 @@
         //│  LCTRL   │  Z       │  X       │  C       │  V       │   │          │          │          │          │          │
             &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-        //                      │  TAB     │  SPC     │  SPC     │   │          │          │          │
-                                  &kp TAB  &kp SPACE  &kp SPACE      &trans     &trans     &trans
+        //                      │  SPC     │  SPC     │  TAB     │   │          │          │          │
+                                  &kp SPACE  &kp SPACE  &kp TAB        &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
