@@ -64,8 +64,8 @@
         //│  N(LSHFT)│  S(LALT) │  H(LCTRL)│  T(WIN)  │  M       │   │  Y       │  C(WIN)  │  A(RCTRL)│  E(RALT) │  I(RSHFT)│
             HRML(N,        S,         H,         T)     &kp M          &kp Y      HRMR(C,        A,         E,        I)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  X       │  V       │  J       │  D       │  Z       │   │  ' "     │  W       │  ;       │ / ?      │ , <      │
-            &kp X      &kp V      &kp J      &kp D      &kp Z          &kp SQT    &kp W      &kp SEMI   &kp FSLH   &kp COMMA
+        //│  X       │  V       │  J       │  D       │  Z       │   │  ' "     │  W       │  \       │ / ?      │ , <      │
+            &kp X      &kp V      &kp J      &kp D      &kp Z          &kp SQT    &kp W      &kp BSLH   &kp FSLH   &kp COMMA
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
         //                      │  ENTER   │  R       │  TAB     │   │  BSPC    │  SPC     │  DEL     │
                                  &lt 6 ENTER &lt 4 R    &lt 7 TAB     &lt 3 BSPC &lt 2 SPACE &lt 5 DEL
